@@ -6,20 +6,16 @@ import { getShowcase } from "~/data/showcase";
 const sites = await getShowcase();
 ---
 
-<ContentSection title="Showcase" id="showcase">
+<ContentSection title="Exhibición" id="showcase">
   <Fragment slot="lead">
-    Astro is <span class="text-primary">versatile</span>.{" "}
-    <span class="text-primary">Explore</span> what's possible and get{" "}
-    <span class="text-primary">inspired</span>.
+    ¡Explora lo que es posible y encuentra <span class="text-primary"
+      >inspiración</span
+    >!
   </Fragment>
   <div class="max-w-6xl space-y-2">
     <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
       {sites.map((site) => <ShowcaseCard site={site} />)}
     </div>
-    <p class="text-right text-sm">
-      <a class="text-primary" href="https://astro.build/showcase/">
-        ...and more &rarr;
-      </a>
-    </p>
+    <p class="text-right text-sm"></p>
   </div>
 </ContentSection>

@@ -3,11 +3,11 @@ import CompatibilityList from "~/components/compatibility-list.astro";
 import ContentSection from "~/components/content-section.astro";
 import type { CompatibilityItem } from "~/types";
 
-const frameworks: Array<CompatibilityItem> = [
+const digitalTools: Array<CompatibilityItem> = [
   {
-    title: "React",
-    icon: "frameworks/react",
-    url: "https://reactjs.org/",
+    title: "Google Mi Negocio",
+    icon: "frameworks/google",
+    url: "https://www.google.com/business/",
   },
   {
     title: "Preact",
@@ -70,20 +70,17 @@ const platforms: Array<CompatibilityItem> = [
 ];
 ---
 
-<ContentSection title="Compatibility" id="compatibility">
+<ContentSection title="Herramientas Digitales" id="digitalTools">
   <Fragment slot="lead">
-    Astro <span class="text-primary">plays nice</span>. Bring your own UI{" "}
-    <span class="text-primary">framework</span>
-    and deploy to your favorite <span class="text-primary">platform</span>.
+    En ContigoMaryland, <span class="text-primary"
+      >nos adaptamos a tus necesidades</span
+    >. Utilizamos las tecnologías más actuales y desplegamos en tu <span
+      class="text-primary">plataforma</span
+    > favorita.
   </Fragment>
   <CompatibilityList
-    items={frameworks}
-    title="Frameworks"
-    url="https://docs.astro.build/core-concepts/framework-components/"
-  />
-  <CompatibilityList
-    items={platforms}
-    title="Platforms"
-    url="https://docs.astro.build/guides/deploy/"
+    items={digitalTools}
+    title="Herramientas"
+    url="https://www.contigomaryland.com/herramientas-digitales/"
   />
 </ContentSection>

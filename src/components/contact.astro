@@ -1,0 +1,49 @@
+---
+import { Icon } from "astro-icon";
+import ContentSection from "~/components/content-section.astro";
+import Steps2 from "~/components/Steps2.astro";
+---
+
+<ContentSection title="Auditoría Gratuita de tu Negocio en Línea" id="contact">
+  <Fragment>
+    ¿Listo para dar el salto y llevar tu negocio a nuevas alturas? ¡Reclama hoy
+    mismo tu auditoría gratuita de tu negocio en línea! Nuestro equipo de
+    expertos analizará minuciosamente tu presencia en línea actual, identificará
+    oportunidades de crecimiento no aprovechadas y te proporcionará
+    recomendaciones accionables. Es una oferta irresistible diseñada
+    meticulosamente para ayudarte a desbloquear el verdadero potencial de tu
+    negocio.
+  </Fragment>
+  <!-- Insert the Calendly iframe -->
+  <iframe
+    src="https://calendly.com/contigomaryland/30min"
+    width="100%"
+    height="600"
+    frameborder="0"></iframe>
+  <Steps2
+    title="Siempre estamos listos para atenderte"
+    items={[
+      {
+        title: "Correo Electrónico",
+        description: "luis@contigomaryland.com",
+      },
+      {
+        title: "Telefono",
+        description: "+1 (240)-370-5585",
+      },
+
+      {
+        title: "Horarios",
+        description: `
+    Lunes: 9 AM–7 PM <br />
+    Martes: 9 AM–7 PM <br />
+    Miércoles: 9 AM–7 PM <br />
+    Jueves: 9 AM–7 PM <br />
+    Viernes: 9 AM–7 PM <br />
+    Sábado: 9 AM–4 PM <br />
+    Domingo: 10 AM–4 PM <br />
+  `,
+      },
+    ]}
+  />
+</ContentSection>
